@@ -33,10 +33,12 @@ span {
 ul {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 5rem;
   align-items: center;
   flex-wrap: wrap;
+  /* width: 75%;
+  height: auto; */
 }
 
 li {
@@ -52,14 +54,14 @@ li:hover {
   color: red;
 }
 
-.images {
+.images-box {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
 }
 
 img {
-  width: 300px;
+  width: 325px;
   height: auto;
   margin: 0.75rem;
 }
@@ -82,4 +84,49 @@ img {
   text-align: center;
   display: block;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  li {
+    font-size: 1rem;
+  }
+  .images-box {
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  img {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  li {
+    font-size: 1.25rem;
+  }
+  .images-box {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  img {
+    width: 500px;
+  }
 }
