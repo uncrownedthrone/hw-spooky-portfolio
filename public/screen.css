@@ -98,6 +98,7 @@ img {
     font-size: 1rem;
   }
   .images-box {
+    border: 5px solid pink;
     height: auto;
     display: flex;
     flex-flow: row wrap;
@@ -120,6 +121,7 @@ img {
     font-size: 1.25rem;
   }
   .images-box {
+    border: 5px solid red;
     width: auto;
     height: auto;
     display: flex;
